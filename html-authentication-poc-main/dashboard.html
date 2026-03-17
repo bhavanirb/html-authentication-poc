@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - AuthApp</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dash-body">
+
+  <!-- Bootstrap Navbar at the top -->
+  <nav class="navbar navbar-expand-lg dash-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="dashboard.html">
+        <span class="brand-box"><i class="bi bi-shield-lock-fill" style="color:#fff;"></i></span>
+        AuthApp
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav">
+        <i class="bi bi-list" style="font-size:1.4rem; color:rgba(255,255,255,0.8);"></i>
+      </button>
+
+      <!-- Nav links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto py-2 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="dashboard.html">
+              <i class="bi bi-house-fill me-1"></i>Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-person-fill me-1"></i>Profile
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-gear-fill me-1"></i>Settings
+            </a>
+          </li>
+        </ul>
+
+        <!-- User + Logout -->
+        <div class="d-flex align-items-center gap-3 py-2 py-lg-0">
+          <div class="user-pill d-none d-lg-flex">
+            <div class="av"><i class="bi bi-person-fill"></i></div>
+            Bhavani R B
+          </div>
+          <!-- Styled Logout button -->
+          <a href="login.html" class="btn-logout">
+            <i class="bi bi-box-arrow-right me-1"></i>Logout
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Bootstrap Container - Welcome Message -->
+  <div class="dash-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <p class="hero-date">Monday, March 17, 2026</p>
+          <h1>Hello, Bhavani! 👋</h1>
+          <p>Here is an overview of your account.</p>
+        </div>
+        <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+          <div style="font-size:5.5rem; opacity:0.15; line-height:1;">🔐</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Professional Dashboard Layout - Bootstrap Grid -->
+  <div class="container dash-content pb-5">
+
+    <!-- Stat Cards Row -->
+    <div class="row g-3 mb-4">
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="s-icon si-blue"><i class="bi bi-person-check-fill"></i></div>
+          <div class="s-val">1</div>
+          <div class="s-lbl">Active Session</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="s-icon si-teal"><i class="bi bi-shield-fill-check"></i></div>
+          <div class="s-val">100%</div>
+          <div class="s-lbl">Security Score</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="s-icon si-amber"><i class="bi bi-bell-fill"></i></div>
+          <div class="s-val">3</div>
+          <div class="s-lbl">Notifications</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="s-icon si-green"><i class="bi bi-clock-fill"></i></div>
+          <div class="s-val">Now</div>
+          <div class="s-lbl">Last Login</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile + Activity Row -->
+    <div class="row g-3">
+
+      <!-- Profile Panel -->
+      <div class="col-lg-4">
+        <div class="panel text-center">
+          <div class="p-avatar"><i class="bi bi-person-fill"></i></div>
+          <h5 class="mb-1" style="font-family:'Plus Jakarta Sans',sans-serif; font-weight:700;">
+            Bhavani R B
+          </h5>
+          <p class="mb-3" style="font-size:0.82rem; color:#757575;">bhavani@example.com</p>
+
+          <div class="d-flex flex-column gap-2 text-start">
+            <div class="info-row">
+              <span class="k"><i class="bi bi-at me-1"></i>Username</span>
+              <span class="v">@bhavani</span>
+            </div>
+            <div class="info-row">
+              <span class="k"><i class="bi bi-calendar3 me-1"></i>Joined</span>
+              <span class="v">2026</span>
+            </div>
+            <div class="info-row">
+              <span class="k"><i class="bi bi-patch-check me-1"></i>Status</span>
+              <span class="bdg bdg-green">Active</span>
+            </div>
+            <div class="info-row">
+              <span class="k"><i class="bi bi-code-slash me-1"></i>Role</span>
+              <span class="bdg bdg-blue">Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity + Quick Actions -->
+      <div class="col-lg-8">
+
+        <!-- Recent Activity Panel -->
+        <div class="panel mb-3">
+          <div class="panel-head">
+            <i class="bi bi-activity"></i> Recent Activity
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <div class="act-row">
+              <div class="act-ico si-blue"><i class="bi bi-box-arrow-in-right"></i></div>
+              <div class="flex-grow-1">
+                <div class="act-title">Login Successful</div>
+                <div class="act-time">Just now · Chrome browser</div>
+              </div>
+              <span class="bdg bdg-green">OK</span>
+            </div>
+            <div class="act-row">
+              <div class="act-ico si-teal"><i class="bi bi-person-plus-fill"></i></div>
+              <div class="flex-grow-1">
+                <div class="act-title">Account Registered</div>
+                <div class="act-time">Today · via Register page</div>
+              </div>
+              <span class="bdg bdg-blue">Info</span>
+            </div>
+            <div class="act-row">
+              <div class="act-ico si-amber"><i class="bi bi-key-fill"></i></div>
+              <div class="flex-grow-1">
+                <div class="act-title">Password Changed</div>
+                <div class="act-time">Today · via reset link</div>
+              </div>
+              <span class="bdg bdg-yellow">Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions Panel -->
+        <div class="panel">
+          <div class="panel-head">
+            <i class="bi bi-grid-fill"></i> Quick Actions
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#" class="q-btn qb-blue">
+              <i class="bi bi-pencil-fill"></i> Edit Profile
+            </a>
+            <a href="reset-password.html" class="q-btn qb-teal">
+              <i class="bi bi-lock-fill"></i> Change Password
+            </a>
+            <a href="#" class="q-btn qb-amber">
+              <i class="bi bi-bell-fill"></i> Notifications
+            </a>
+            <a href="login.html" class="q-btn qb-red">
+              <i class="bi bi-box-arrow-right"></i> Logout
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="dash-foot">
+    © 2026 AuthApp &nbsp;·&nbsp; CampusPe Fullstack Java Development &nbsp;·&nbsp; Assignment 2
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
+
