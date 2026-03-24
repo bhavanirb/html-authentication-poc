@@ -10,29 +10,23 @@
 
 A professional, fully responsive authentication system built using Bootstrap 5 and custom CSS with Google Fonts. The system includes 5 pages with anchor tag redirections.
 
----
 
 ## 🖥️ Screenshots
 
-### 🔐 Login Page
+### Login Page
+![Login Page](html-authentication-poc-main/screenshots/login.png)
 
-<img src="./screenshots/login.png" width="800"/>
+### Register Page
+![Register Page](html-authentication-poc-main/screenshots/register.png)
 
-### 📝 Register Page
+### Forgot Password Page
+![Forgot Password Page](html-authentication-poc-main/screenshots/forgot-password.png)
 
-<img src="./screenshots/register.png" width="800"/>
+### Reset Password Page
+![Reset Password Page](html-authentication-poc-main/screenshots/reset-password.png)
 
-### 🔑 Forgot Password Page
-
-<img src="./screenshots/forgot-password.png" width="800"/>
-
-### ♻️ Reset Password Page
-
-<img src="./screenshots/reset-password.png" width="800"/>
-
-### 📊 Dashboard Page
-
-<img src="./screenshots/dashboard.png" width="800"/>
+### Dashboard Page
+![Dashboard Page](html-authentication-poc-main/screenshots/dashboard.png)
 
 ---
 
